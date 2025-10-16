@@ -9,10 +9,10 @@ public class Configuration {
     public static final char PAD_CHAR = '~';
 
     // **FIX**: The padding character '~' has been added back to the end of the set.
-    public static final String CHARACTER_SET_STRING = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-            + "abcdefghijklmnopqrstuvwxyz"
-            + "0123456789"
-            + " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
+    public static final String CHARACTER_SET_STRING = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"+
+            "abcdefghijklmnopqrstuvwxyz"+
+            "0123456789"+
+            " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
 
     // Convert the string to a list of characters
     public static final List<Character> CHARACTER_SET = CHARACTER_SET_STRING.chars()
