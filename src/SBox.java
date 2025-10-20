@@ -9,7 +9,6 @@ public class SBox {
     private final Map<Character, Character> inverseSBoxMap;
 
     public SBox(List<Character> characterSet) {
-        // Use a fixed seed to ensure the S-Box is the same every time
         Random seededRandom = new Random(42L);
         List<Character> shuffledSet = new java.util.ArrayList<>(characterSet);
         Collections.shuffle(shuffledSet, seededRandom);

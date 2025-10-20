@@ -9,7 +9,7 @@ public class CerberusCipher {
         this.pBox = new PBox();
     }
 
-    // Helper method for key mixing (modular addition)
+    //key mixing (modular addition)
     private String mixWithKey(String block, String key) {
         StringBuilder mixedBlock = new StringBuilder();
         for (int i = 0; i < block.length(); i++) {
@@ -21,7 +21,7 @@ public class CerberusCipher {
         return mixedBlock.toString();
     }
 
-    // Helper method for key un-mixing (modular subtraction)
+    //key un-mixing (modular subtraction)
     private String unmixWithKey(String block, String key) {
         StringBuilder unmixedBlock = new StringBuilder();
         for (int i = 0; i < block.length(); i++) {
